@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MacBook Pro</title>
+    <link rel="shortcut icon" href="images/apple.png" type="image/x-icon">
+     <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"/>
+       <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <!-- main start -->
+    <main>
+      <section class="row mx-3 p-2 mt-4">
+        <div class="col-5">
+          <img class="img-fluid" src="images/mac.png" alt="" />
+        </div>
+        <div class="col-7 my-2">
+           <!-- header start -->
+          <header>
+            <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard - US English.</p> </header>
+          <!-- header end -->
+          <main>
+            <div class="my-2 mt-4">
+              <h3>Memory</h3>
+              <button class="btn btn-black" id="memory1">
+                8GB unified memory
+              </button>
+              <button class="btn btn-black" id="memory2">
+                16GB unified memory
+              </button>
+            </div>
+            <div class="my-2 mt-3">
+              <h2>Storage</h2>
+              <button class="btn btn-black" id="ssd256">
+                256GB SSD Storage
+              </button>
+              <button class="btn btn-black" id="ssd512">
+                512GB SSD Storage
+              </button>
+              <button class="btn btn-black" id="ssd1tb">1TB SSD Storage</button>
+            </div>
+            <div class="my-2 mt-3">
+              <h2>Choose your delivery option</h2>
+              <button class="btn btn-black" id="deliveryOption1">
+                Friday, Aug 25 FREE Prime Delivery
+              </button>
+              <button class="btn btn-black" id="deliveryOption2">
+                Friday, Aug 21 Delivery charge $20
+              </button>
+            </div>
+            <div class="calculation-part w-75 my-2 mt-3">
+              <table class="table table-striped table-hover">
+                <h3>Price:</h3>
+                <tr>
+                  <td>Best Price</td>
+                  <td>$<span id="bestPrice">1299</span></td>
+                </tr>
+                <tr>
+                  <td>Extra Memory Cost</td>
+                  <td>$<span id="extraMemoryCost">0</span></td>
+                </tr>
+                <tr>
+                  <td>Extra Storage Cost</td>
+                  <td>$<span id="extraStorageCost">0</span></td>
+                </tr>
+                <tr>
+                  <td>Delivery Charge</td>
+                  <td>$<span id="extraDeliveryCost">0</span></td>
+                </tr>
+                <tr id="discountRow">
+                  <td>20% Discount</td>
+                  <td>$<span id="discountValue">0</span></td>
+                </tr>
+                <hr />
+                <tr>
+                  <td>Total Price</td>
+                  <td>$<span id="totalPrice">1299</span></td>
+                </tr>
+              </table>
+            </div>
+          </main>
+          <footer class="mt-3">
+            <h3>Add Promo code</h3>
+            <div class="d-flex">
+              <input class="px-2"
+                id="promoInput"
+                type="text"
+                placeholder="Enter promo code"
+              />
+              <button enabled="true" id="btnapply"
+                onclick="getDiscountPrice()"
+                class="btn btn-red mx-2 px-5">Apply
+              </button>
+            </div>
+            <div class="form-text">Use promo code "stevekaku" to get 20% Discount</div>
+          </footer>
+        </div>
+      </section>
+      <hr />
+      <section class="text-center fw-bold">
+        <h1>Total: $ <span id="totalPriceFooter">1299</span></h1>
+      </section>
+    </main>
+    <!-- Bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+      <!-- Js Script -->
+    <script src="app.js"></script>
+  </body>
+</html>
